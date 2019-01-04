@@ -40,3 +40,9 @@
 			}
 		}
 	}
+
+	function distribution($array)
+	{
+		echo "<br>";
+		print_r(array_count_values($array));
+	}
