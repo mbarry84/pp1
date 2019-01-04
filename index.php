@@ -1,6 +1,6 @@
 <?php
     //add array per directions
-    $numbers = array(7,9,8,9,8,8,6,2,4,5);
+    $numbers = array(7,9,8,9,8,8,6);
 
 
     include "functions.php";
@@ -26,7 +26,7 @@
 	    echo average($numbers);
 	    echo "<br>";
 	    removeDups($numbers);
-
+        distribution($numbers);
     ?>
 
 </body>
