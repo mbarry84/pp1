@@ -1,6 +1,6 @@
 <?php
     //add array per directions
-    $numbers = array(7,9,8,9,8,8,6);
+    $numbers = array(7,9,8,9,8,8,6,2,4,5);
 
 
     include "functions.php";
@@ -24,6 +24,9 @@
         echo largest($numbers);
 	    echo "<br>";
 	    echo average($numbers);
+	    echo "<br>";
+	    removeDups($numbers);
+
     ?>
 
 </body>
