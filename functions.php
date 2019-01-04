@@ -8,7 +8,7 @@
 
 	function printer($array)
 	{
-		for ($i = 0; $i  < sizeof($array) ; $i++)
+		for ($i = 0; $i  < count($array) ; $i++)
 		{
 			echo $array[$i] .", ";
 		}
@@ -26,5 +26,17 @@
 		$arrayLength = count($array);//length of array
 
 		return ($arraySum/$arrayLength);
+	}
 
+	function removeDups($array)
+	{
+		//remove duplicates from the array
+		$arraySlim = array_unique($array);
+		for ($i = 0; $i  < count($array) ; $i++)
+		{
+			if(!$arraySlim[$i] == NULL)
+			{
+				echo $arraySlim[$i] .", ";
+			}
+		}
 	}
